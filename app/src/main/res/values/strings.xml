@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GastoU</string>
+    <string name="widget_label">Resumen GastoU</string>
+    <string name="widget_description">Muestra lo que has gastado este mes y lo que te queda del presupuesto</string>
 </resources>

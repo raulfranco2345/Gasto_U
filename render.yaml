@@ -1,0 +1,15 @@
+# Despliegue de la API de GastoU en Render (https://render.com) con "Blueprint".
+services:
+  - type: web
+    name: gastou-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
